@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Tracker</title>
+</head>
+<body>
+
+    <center>
+    <form>
+    <h1>Password Keeper</h1>
+    <p id="para1"></p>
+    <label for="s1">Search:</label>
+    <input type="text" id="s1">
+    </form>
+    </center>
+
+    <form id="f1" onsubmit="abc(event)">
+        <label for="t1">Title:</label>
+        <input type="text" id="t1"><br>
+        <label for="p1">Password:</label>
+        <input type="text" id="p1"><br>
+        <button type="submit" id="btn1">Add</button>
+    </form>
+    <br><br>
+
+    <h3>All Passwords</h3>
+    <ul id="display_items"></ul>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
